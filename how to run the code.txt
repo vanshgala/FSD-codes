@@ -1,0 +1,69 @@
+EXP2 :
+in cmd write node EXP2.js
+
+EXP3:
+normally jese karte hee
+
+EXP 4:
+npm create vite@latest "UR file NAME"  -- --template react
+change the code in app.jsx which is in src folder also learn the code which is present in the app.jsx
+the to start the file type npm run dev in cmd  
+
+EXP 5:
+npm create vite@latest "UR file NAME"  -- --template react
+change the code in app.jsx which is in src folder also learn the code which is present in the app.jsx
+the to start the file type npm run dev in cmd 
+
+EXP 6:
+npm create vite@latest "UR file NAME"  -- --template react
+change the code in app.jsx which is in src folder also learn the code which is present in the app.jsx
+
+the to start the file type npm run dev in cmd 
+
+
+EXP8:
+## How to run it
+
+File type: JavaScript (`.js`) File name: `server.js`
+
+1. Install Node.js.
+2. Open the terminal in VS Code and run:
+
+```
+npm init -y
+npm install express
+```
+
+3\. Run the program:
+
+```
+node server.js
+```
+
+4\. Open Postman and test these endpoints:
+
+| Method | URL                             | Purpose       |
+| ------ | ------------------------------- | ------------- |
+| GET    | `http://localhost:3000/users`   | View users    |
+| POST   | `http://localhost:3000/users`   | Add a user    |
+| PUT    | `http://localhost:3000/users/1` | Update a user |
+| DELETE | `http://localhost:3000/users/1` | Delete a user |
+
+For POST and PUT, select Body → raw → JSON in Postman. Example:
+
+```
+{
+  "id": 3,
+  "name": "Amit"
+}
+```
+
+This code stores data in memory, so the users reset when you restart the server.
+yt link to perform this : https://youtu.be/cuoElaosHwA?si=2SL91awJO6DU_z9S
+
+EXP9: NAI AATA 
+
+
+EXP10:
+Change the MongoDB ref link in the code 
+and write node EXP10.js
