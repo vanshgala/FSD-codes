@@ -7,40 +7,32 @@ normally jese karte hee
 EXP 4:
 npm create vite@latest "UR file NAME"  -- --template react
 change the code in app.jsx which is in src folder also learn the code which is present in the app.jsx
-the to start the file type npm run dev in cmd  
+then to start the file type npm run dev in cmd  
 
 EXP 5:
 npm create vite@latest "UR file NAME"  -- --template react
 change the code in app.jsx which is in src folder also learn the code which is present in the app.jsx
-the to start the file type npm run dev in cmd 
+then to start the file type npm run dev in cmd 
 
 EXP 6:
 npm create vite@latest "UR file NAME"  -- --template react
 change the code in app.jsx which is in src folder also learn the code which is present in the app.jsx
-
-the to start the file type npm run dev in cmd 
-
+then to start the file type npm run dev in cmd 
 
 EXP8:
 ## How to run it
-
-File type: JavaScript (`.js`) File name: `server.js`
+File type: JavaScript (`.js`) 
+File name: `server.js`
 
 1. Install Node.js.
 2. Open the terminal in VS Code and run:
-
-```
 npm init -y
-npm install express
-```
+npm install express body-parser
 
-3\. Run the program:
-
-```
+3. Run the program:
 node server.js
-```
 
-4\. Open Postman and test these endpoints:
+4. Open Thunder Client and test these endpoints:
 
 | Method | URL                             | Purpose       |
 | ------ | ------------------------------- | ------------- |
@@ -49,20 +41,62 @@ node server.js
 | PUT    | `http://localhost:3000/users/1` | Update a user |
 | DELETE | `http://localhost:3000/users/1` | Delete a user |
 
-For POST and PUT, select Body → raw → JSON in Postman. Example:
-
-```
+For POST and PUT, select Body → JSON in Thunderclient. Example:
 {
-  "id": 3,
   "name": "Amit"
 }
-```
 
 This code stores data in memory, so the users reset when you restart the server.
-yt link to perform this : https://youtu.be/cuoElaosHwA?si=2SL91awJO6DU_z9S
 
-EXP9: NAI AATA 
+EXP9: 
+##How to Run it
+Step 1:
+cd FSD-Codes/Exp9
 
+Step 2: Install Dependencies
+npm init -y
+npm install dotenv express jsonwebtoken
+
+Step 3: Create the Required Files
+Create these three files inside your project folder:
+jwt-project/
+├── index.js
+├── .env
+└── package.json
+
+Step 6: Start the Server
+In the VS Code terminal, run:
+node index.js
+
+Expected output:
+Server is up and running on 5000 ...
+
+Keep the terminal open.
+
+Step 7: Test Using Thunder Client
+Open Thunder Client in VS Code and click New Request.
+Request 1: Generate JWT Token
+POST: Generate a token
+URL: http://localhost:5000/user/generateToken
+Configuration
+- Select method POST.
+- No request body or headers are required.
+- Click Send.
+Expected response: A long JWT string containing three parts separated by dots (.).
+
+Request 2: Validate JWT Token
+GET: Validate the token
+URL: http://localhost:5000/user/validateToken
+Configuration
+1. Copy the JWT returned by Request 1.
+2. Open the Headers tab in Thunder Client.
+3. Add the following header:
+Header name		| Value
+gfg_token_header_key	| Paste your generated JWT here
+4. Click Send.
+
+Expected response
+Successfully Verified
 
 EXP10:
 Change the MongoDB ref link in the code 

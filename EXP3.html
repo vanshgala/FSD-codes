@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <body>
-
     <h2 id="title">Hello Student</h2>
-
     <button id="btn">Click Me</button>
-
     <script>
         let title = document.getElementById("title");
         let colors = ["lightblue", "lightgreen", "lightpink", "lightyellow", "lavender", "peachpuff"];
         let colorIndex = 0;
-
         document.getElementById("btn").addEventListener("click", function () {
             title.innerHTML = "Welcome to JavaScript!";
             title.style.color = "blue";
-
             // Change background color on every click
             document.body.style.backgroundColor = colors[colorIndex];
             colorIndex = (colorIndex + 1) % colors.length;
-
-
         });
     </script>
-
 </body>
-
 </html>

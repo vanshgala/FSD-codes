@@ -1,10 +1,8 @@
 const readline = require("readline");
-
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
 // test1.js - Temperature conversion
 rl.question("Enter temperature in Celsius: ", function(input) {
     let c = Number(input);
